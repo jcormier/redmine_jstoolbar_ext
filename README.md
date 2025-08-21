@@ -1,17 +1,15 @@
-[![Maintained? No](https://img.shields.io/badge/maintained%3F-no!-red.svg)](https://shields.io/)
-# THIS PROJECT IS NO LONGER BEING MAINTAINED
-The author no longer uses Redmine and cannot effectively update and maintain this repo.
-
 # Redmine jsToolbar Extension
 
 ## Summary
 
-The Redmine jsToolbar Extension is the base library for adding additional functionality to the [Redmine](http://www.redmine.org/) wiki and text editor toolbar.  
+The Redmine jsToolbar Extension is the base library for adding additional functionality to the [Redmine](http://www.redmine.org/) wiki and text editor toolbar. 
+
+It is a fork of https://github.com/tleish/redmine_jstoolbar_ext that now works with redmine 6.*.
 
 ## See:
 
 * [Redmine jsToolbar Images Extension](https://github.com/tleish/redmine_jstoolbar_ext_images)
-* [Redmine jsToolbar Buttons Extension](https://github.com/tleish/redmine_jstoolbar_ext_buttons)
+* [Redmine jsToolbar Buttons Extension](https://github.com/stuckas/redmine_jstoolbar_ext_buttons)
 * [Redmine jsToolbar CodeRay Extension](https://github.com/tleish/redmine_jstoolbar_ext_coderay)
 
 
@@ -19,7 +17,7 @@ The Redmine jsToolbar Extension is the base library for adding additional functi
 
 ```
 $ cd redmine/plugins
-$ git clone https://github.com/tleish/redmine_jstoolbar_ext
+$ git clone https://github.com/stuckas/redmine_jstoolbar_ext
 ```
 
 restart Redmine
