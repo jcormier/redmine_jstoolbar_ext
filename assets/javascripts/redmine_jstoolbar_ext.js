@@ -120,15 +120,20 @@
     };
 
     var build_menu = function(buttons){
+      // Redmine >= 5 draws the toolbar inside the Edit/Preview tabs row
+      // (.jstTabs.tabs), which is overflow:hidden and would clip a menu
+      // inserted next to the button. Append to <body> in document
+      // coordinates instead, like core's precode language menu.
+      var button_offset = $button.offset();
       $('<div/>')
         .addClass('jstb_ext_submenu')
         .addClass(uniq_menu_class())
-        .css({
-          left: $button.position().left + 'px',
-          top:  $button.position().top + 24 + 'px'
-        })
         .append(buttons)
-        .insertAfter( $button );
+        .appendTo( document.body )
+        .offset({
+          left: button_offset.left,
+          top:  button_offset.top + $button.outerHeight()
+        });
     };
 
     var button_opener_class = function(){
